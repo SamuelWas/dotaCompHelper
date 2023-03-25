@@ -38,7 +38,7 @@ function HeroesComp({ compHeroes, onClick }) {
 	});
 
 	return (
-		<div class={styles.heroComp}>
+		<div className={styles.heroComp}>
 			{hero}
 		</div>
 	);
@@ -182,7 +182,7 @@ function HeroesList({ searchText, onClick }) {
 	})
 
 	return (
-		<div class={styles.heroesList}>
+		<div className={styles.heroesList}>
 			{searchableHeroes}
 		</div>
 	);
