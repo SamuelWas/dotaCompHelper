@@ -14,7 +14,7 @@ function HeroSlot({ hero, onClick }) {
 			<div className={styles.heroSlot}>
 				{/* {mainName} */}
 				{/* {imageFileName} */}
-				{< Image src={`/heroes/${imageFileName}.png`} width={225} height={127} />}
+				{< Image src={`/heroes/${imageFileName}.png`} alt="hero" width={225} height={127} />}
 			</div>
 		</a>
 	)
@@ -31,9 +31,9 @@ function HeroCard({ hero, onClick }) {
 }
 
 function HeroesComp({ compHeroes, onClick }) {
-	const hero = compHeroes.map(hero => {
+	const hero = compHeroes.map((hero, index) => {
 		return (
-			<HeroCard hero={hero} onClick={onClick} />
+			<HeroCard hero={hero} key={index} onClick={onClick} />
 		)
 	});
 
@@ -175,9 +175,9 @@ function HeroesList({ searchText, onClick }) {
 		return !searchText || heroe.names.some(name => (name.toLowerCase()).includes(searchText.toLowerCase()))
 	})
 
-	const searchableHeroes = filteredHeroes.map(hero => {
+	const searchableHeroes = filteredHeroes.map((hero, index) => {
 		return (
-			<HeroSlot hero={hero} onClick={onClick} />
+			<HeroSlot hero={hero} key={index} onClick={onClick} />
 		);
 	})
 
