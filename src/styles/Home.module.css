@@ -1,0 +1,74 @@
+.heroCard {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.heroSlot {
+	aspect-ratio: 1 / 1;
+	width: 225px;
+	height: 127px;
+	margin: 0.4rem;
+	/* flex: 2; */
+}
+
+.heroName {
+	/* flex: 1; */
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	font-size: 1rem;
+	/* background-color: yellow; */
+	overflow: hidden;
+	text-align: center;
+}
+
+.heroComp {
+	height: 13rem;
+	width: 55%;
+	margin: 0 auto;
+	margin-top: 1rem;
+	padding: 0.5rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+.heroSlot:hover {
+	/* border: 1px solid #000; */
+	transform: scale(1.8);
+	transition: transform 0.3s ease;
+}
+
+.searchBar {
+	width: 100%;
+	padding: 0rem 0;
+	margin: 0 auto;
+	margin-bottom: 1.5rem;
+}
+
+.searchBar input {
+	font-size: 2rem;
+	width: 100%;
+	height: 2rem;
+}
+
+.heroesList {
+	height: 80rem;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: start;
+	flex-wrap: wrap;
+}
+
+.heroesList>.heroSlot {
+	width: 225px;
+	height: 127px;
+	margin: 0.4rem 0.4rem;
+}
+
+.container {
+	width: 70%;
+	margin: 0 auto;
+}
